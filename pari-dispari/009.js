@@ -3,23 +3,22 @@ Chiedere all'utente se sceglie pari o dispari, quindi fare la somma dei due nume
 
 /*chiedo all'utente un numero tra 1 e 5*/
 var getHumanNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
-console.log('numero human: ' +getHumanNumber);
+console.log('Il tuo numero: ' +getHumanNumber);
 
 /*chiedo all'utente se vuole pari o dispari*/
 var getNumberType = prompt('Scegli pari o dispari');
-console.log('tipo human: ' + getNumberType);
+console.log('Hai scelto i numeri: ' + getNumberType);
 
 /*genero un numero random tra 1 e 5*/
 var getCompNumber = getRandomNumber(1,5);
-console.log('numero pc: ' +getCompNumber);
+console.log('Il pc ha giocato: ' +getCompNumber);
 
 /*faccio la somma dei due numeri*/
 var sum = sum(getHumanNumber, getCompNumber);
-console.log('somma: ' + sum);
+console.log('La somma è: ' + sum);
 
 /*controllo se la somma è pari o dispari*/
 var sumTypeCheck = isEven(sum);
-console.log('sum type is: ' + sumTypeCheck);
 
 /*controllo se il risultato combacia con quanto scelto dall'utente e comunico il risultato*/
 if ((sumTypeCheck == true && getNumberType == 'pari') || (sumTypeCheck == false && getNumberType == 'dispari')) {
