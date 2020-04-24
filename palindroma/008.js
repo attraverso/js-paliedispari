@@ -13,9 +13,9 @@ if (checkIfPalindrome(getWord) == false) {
     console.log('Questa parola è palindroma.');
   }
 
-function checkIfPalindrome(checkWord) {
+function checkIfPalindrome(word) {
   /*popolo un array con i singoli caratteri della stringa*/
-  var getChars = checkWord.split('');
+  var getChars = word.split('');
   // console.log(getChars);
   /*ciclo for in cui:*/
   for (var i = 0; i < getChars.length; i++) {
